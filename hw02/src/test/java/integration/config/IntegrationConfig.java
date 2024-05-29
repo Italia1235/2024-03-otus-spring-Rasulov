@@ -10,7 +10,7 @@ import ru.otus.hw.dao.QuestionDao;
 
 
 @Configuration
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:application-test.properties")
 public class IntegrationConfig {
 
     @Bean

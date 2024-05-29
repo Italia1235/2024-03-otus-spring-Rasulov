@@ -1,0 +1,5 @@
+# Добавить сюда своих вопросов. Эту строку надо пропустить при настройке CsvToBean (withSkipLines)
+2+2?:4%true|2%false
+3*5?:15%true|2%false
+2*2?:4%true|2%false
+100-1?:98%false|99%true

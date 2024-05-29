@@ -9,7 +9,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import ru.otus.hw.dao.QuestionDao;
-import ru.otus.hw.dao.dto.QuestionDto;
 import ru.otus.hw.domain.Question;
 
 import java.util.List;
@@ -25,7 +24,8 @@ public class CsvQuestionDaoTest {
     @Test
     void finAllQuestionTest() {
         List<Question> questions = questionDao.findAll();
-        System.out.println(questions);
         Assertions.assertEquals(4, questions.size());
+        Assertions.assertEquals("2+2?", questions.get(0).text());
+        Assertions.assertEquals("3*5?", questions.get(1).text());
     }
 }
