@@ -16,7 +16,6 @@ import java.util.List;
 
 public class CsvQuestionDaoTest {
 
-
     private QuestionDao questionDao;
 
     @BeforeEach

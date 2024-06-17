@@ -26,7 +26,7 @@ public class ResultServiceTest {
     void setUp() {
         TestConfig testConfig = Mockito.mock(AppProperties.class);
         ioService = Mockito.mock(StreamsIOService.class);
-        resultService = new ResultServiceImpl(testConfig, ioService);
+        resultService = new ResultServiceImpl(testConfig, (LocalizedIOService) ioService);
     }
 
     @Test

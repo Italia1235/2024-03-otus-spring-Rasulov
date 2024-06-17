@@ -12,14 +12,14 @@ import ru.otus.hw.domain.TestResult;
 @Service
 public class TestServiceImpl implements TestService {
 
-    private final IOService ioService;
+    private final LocalizedIOService  ioService;
 
     private final QuestionDao questionDao;
 
     @Override
     public TestResult executeTestFor(Student student) {
         ioService.printLine("");
-        ioService.printFormattedLine("Please answer the questions below%n");
+        ioService.printLineLocalized("TestService.answer.the.questions");
         var questions = questionDao.findAll();
         var testResult = new TestResult(student);
 
